@@ -8,7 +8,9 @@ function Header() {
         <header>
             <div>Fakestore</div>
             <div>
-                <SlBasket />
+                <SlBasket size={35} /> {/* cart icon */}
+                {/* Shows red badge on cart */}
+                {/* WIP - create prop for cart count */}
                 <div className="notification-badge">0</div>
             </div>
         </header>
