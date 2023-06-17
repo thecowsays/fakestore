@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  
+
+}
+
+  .notification-badge {
+    background-color: red;
+    border-radius: 50%;
+    height: 16px;
+    min-width: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+  }
+
