@@ -1,29 +1,40 @@
 * {
-  margin: 0;
+  margin: 8px 8px 0 8px;
   padding: 0;
   box-sizing: border-box;
 }
 
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #3A4895;
+}
 
 header {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  text-align: center;
+  align-items: center;
 }
 
 .logo {
-  
-
+  color: #3A4895;
+  font-family: 'Inter';
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
 }
 
   .notification-badge {
     background-color: red;
     border-radius: 50%;
-    height: 16px;
-    min-width: 16px;
+    height: .9rem;
+    min-width: .9rem;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 4px;
+    right:6px;
     font-size: .8rem;
     font-weight: 700;
     color: #fff;

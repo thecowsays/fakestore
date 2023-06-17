@@ -6,7 +6,7 @@ import './Header.css'
 function Header() {
     return (
         <header>
-            <div>Fakestore</div>
+            <div class="logo"><a href="">Fakestore</a></div>
             <div>
                 <SlBasket size={35} /> {/* cart icon */}
                 {/* Shows red badge on cart */}
