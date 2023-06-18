@@ -5,7 +5,8 @@ import '../global.css'
 function Footer() {
     return (
         <footer>
-            <h2>This is a footer, LOL!</h2>
+            <div>Made with ❤️ by mimo</div>
+            <div>Contact Us</div>
         </footer>
     )
 }

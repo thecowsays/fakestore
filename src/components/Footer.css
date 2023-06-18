@@ -5,5 +5,11 @@
 }
 
 footer {
-    background-color: lime;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    height: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
