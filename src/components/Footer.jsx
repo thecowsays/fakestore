@@ -1,11 +1,12 @@
 import React from 'react'
 import './Footer.css'
-import './global.css'
-
+import '../global.css'
 
 function Footer() {
     return (
-        <div>Footer</div>
+        <footer>
+            <h2>This is a footer, LOL!</h2>
+        </footer>
     )
 }
 
