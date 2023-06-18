@@ -1,14 +1,7 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 1em 2em;
   box-sizing: border-box;
-}
-
-a,
-a:hover,
-a:visited {
-  text-decoration: none;
-  color: #3A4895;
 }
 
 header {
@@ -19,9 +12,9 @@ header {
   align-items: center;
 }
 
-.logo {
-  color: #3A4895;
-  font-family: 'Inter';
+.logo,
+a, a:hover, a:visited, a:active {
+  color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
