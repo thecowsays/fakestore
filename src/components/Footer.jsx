@@ -5,8 +5,8 @@ import '../global.css'
 function Footer() {
     return (
         <footer>
-            <div>Made with ❤️ by mimo</div>
-            <div>Contact Us</div>
+            <div>Made with ❤️ by salali x mimo</div>
+            <a href="/">Contact Us</a>
         </footer>
     )
 }
