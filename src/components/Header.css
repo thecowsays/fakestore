@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 1em 2em;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,10 +10,10 @@ header {
   flex-wrap: nowrap;
   text-align: center;
   align-items: center;
+  padding: 1em 2em;
 }
 
-.logo,
-a, a:hover, a:visited, a:active {
+.logo, header a {
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: 700;

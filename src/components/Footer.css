@@ -7,9 +7,15 @@
 footer {
     background-color: var(--primary-color);
     color: var(--text-light);
-    height: 2rem;
+    height: 4rem;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    font-size: .75rem;
+    padding: 0 2em;
+}
+
+footer a {
+    color: var(--text-light);
 }
