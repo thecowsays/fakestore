@@ -6,8 +6,8 @@ import '../../global.css'
 function Header() {
     return (
         <header>
-            <div class="logo"><a href="">Fakestore</a></div>
-            <div class="test">
+            <div className="logo"><a href="">Fakestore</a></div>
+            <div className="test">
                 <SlBasket size={35} fill={"var(--primary-color)"} /> {/* cart icon */}
                 {/* Shows red badge on cart */}
                 {/* WIP - create prop for cart count */}
