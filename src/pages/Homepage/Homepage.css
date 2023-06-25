@@ -1,0 +1,10 @@
+.home-wrapper {
+    min-height: 100vh;
+    /* desktop will probably need 8em */
+    padding: 1em 4em;
+}
+
+li {
+    list-style: none;
+    color: var(--secondary-color);
+}
