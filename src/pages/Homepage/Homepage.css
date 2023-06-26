@@ -4,7 +4,11 @@
     padding: 1em 4em;
 }
 
-li {
-    list-style: none;
+button {
     color: var(--secondary-color);
+    background-color: transparent;
+    border: 0;
+    padding: 1em;
+    font-size: 1rem;
+    text-transform: capitalize;
 }

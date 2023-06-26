@@ -1,15 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 // import '../../global.css'
 import './Homepage.css'
 
 function Homepage() {
+
+    const [categories, setCategories] = useState([])
+
     useEffect(
         () => {
-            console.log("it works");
             axios.get(`https://fakestoreapi.com/products/categories`)
                 .then(res => {
-                    console.log(res.data);
+                    setCategories(res.data)
                 })
                 .catch(err => console.log(err))
         }, []
@@ -19,7 +21,13 @@ function Homepage() {
             <div className="categories">
                 {/* endpoint for ALL categories */}
                 {/* https://fakestoreapi.com/products/categories */}
-                <li>All</li>
+                <button>All</button>
+                {
+                    categories.map(item => <button>{item}</button>)
+                }
+                {/* get array of categories */}
+                {/* loop through array displaying each item as a button */}
+
                 {/* each category endpoint example */}
                 {/* https://fakestoreapi.com/products/category/jewelery */}
 
