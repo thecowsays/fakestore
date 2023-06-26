@@ -1,14 +1,19 @@
 .home-wrapper {
     min-height: 100vh;
-    /* desktop will probably need 8em */
-    padding: 1em 4em;
+    /* desktop will probably need 4em or 8em */
+    padding: 1em 2em;
 }
 
 button {
     color: var(--secondary-color);
     background-color: transparent;
     border: 0;
-    padding: 1em;
     font-size: 1rem;
     text-transform: capitalize;
+    padding: .3em;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
 }

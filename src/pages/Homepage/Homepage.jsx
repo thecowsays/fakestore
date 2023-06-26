@@ -1,12 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-// import '../../global.css'
+import ProductCards from '../../components/ProductCards/ProductCards';
 import './Homepage.css'
 
 function Homepage() {
 
     const [categories, setCategories] = useState([])
 
+    allProducts(
+        () => {
+            axios.get(`https://fakestoreapi.com/products`)
+                .then(res => {
+                    console.log(allProducts)
+                })
+                .catch(err => console.log(err))
+        }, []
+    )
+
+    // Retrieve and display all categories for navbar
     useEffect(
         () => {
             axios.get(`https://fakestoreapi.com/products/categories`)
@@ -22,17 +33,14 @@ function Homepage() {
                 {/* endpoint for ALL categories */}
                 {/* https://fakestoreapi.com/products/categories */}
                 <button>All</button>
-                {
-                    categories.map(item => <button>{item}</button>)
-                }
-                {/* get array of categories */}
-                {/* loop through array displaying each item as a button */}
+                {categories.map(item => <button>{item}</button>)}
+                
 
                 {/* each category endpoint example */}
                 {/* https://fakestoreapi.com/products/category/jewelery */}
 
-
             </div>
+            <ProductCards />
         </div>
     )
 }
