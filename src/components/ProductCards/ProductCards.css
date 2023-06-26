@@ -1,0 +1,15 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-flow: row;
+}
+
+.card-item {
+    border: 1px solid black;
+    width: 100%;
+
+}
+.card-item img {
+    object-fit: cover; /* scale to fit card */
+}
+
