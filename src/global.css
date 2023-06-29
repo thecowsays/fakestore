@@ -6,6 +6,8 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-size: 16px;
+    background-color: #FAFAFA;
+;
 
     --primary-color: #3A4895;
     --secondary-color: #5264C3;
@@ -16,6 +18,7 @@
 a, a:hover, a:visited, a:active {
     text-decoration: none;
     color: var(--secondary-color);
+    cursor: pointer;
 }
 
 

@@ -1,7 +1,7 @@
 .home-wrapper {
     min-height: 100vh;
     /* desktop will probably need 4em or 8em */
-    padding: 1em 2em;
+    /* padding: 1em 2em; */
 }
 
 button {
@@ -16,4 +16,12 @@ button {
 .categories {
     display: flex;
     flex-wrap: wrap;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
