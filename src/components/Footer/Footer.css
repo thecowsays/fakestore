@@ -14,6 +14,7 @@ footer {
     align-items: center;
     font-size: .75rem;
     padding: 0 2em;
+    margin-top: 3em; /* gives space above for the last item displayed */
 }
 
 footer a {
