@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer>
             <div>Made with ❤️ by salali x mimo</div>
-            <a href="/">Contact Us</a>
+            <a href="#">Contact Us</a>
         </footer>
     )
 }
