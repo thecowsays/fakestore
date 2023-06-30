@@ -1,10 +1,12 @@
 import React from 'react'
 import './ProductCard.css'
+import { AiFillHeart } from "react-icons/ai";
 
 function ProductCard({ product }) {
   return (
     <div className="card-container">
       <img src={product.image} />
+      <AiFillHeart className="heart" />
       <div>
         <p className="bold">{product.title}</p>
         <p className="label">{product.category}</p>
