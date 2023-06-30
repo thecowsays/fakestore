@@ -1,17 +1,20 @@
 .card-container {
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 40vw;
+    margin: .5em;
+}
+.card {
+    background-color: #fff;
     border: none;
     border-radius: 1em;
-    width: 11.4em;
-    height: 16em;
     padding: 1em;
-    margin: 1em 0;
+    /* margin: 1.5em 0; */
     position: relative;
+    flex-grow: 1;
 }
 
 .card-container img {
@@ -20,7 +23,7 @@
     object-fit: contain;
     border: 1px solid lightgray;
     border-radius: 1em;
-    padding: .5em 0;
+    padding: 5vh 5vw;
     margin-bottom: .5em;
 }
 
