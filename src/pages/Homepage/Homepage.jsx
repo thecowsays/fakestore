@@ -34,6 +34,15 @@ function Homepage() {
         <div className="home-wrapper">
             <div className="categories">
 
+                {/* I want to create a button for each category item */}
+                {/* First, use the categories GET and map each item */}
+                {
+                    categories.map((item) => {
+                        console.log(item)
+                        return <button key={item}>{item}</button>
+                    }
+                    )
+                }
             </div>
             <div className="product-container">
                 {
