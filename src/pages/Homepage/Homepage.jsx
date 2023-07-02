@@ -30,6 +30,18 @@ function Homepage() {
         }, []
     )
 
+    const showCategory = () => {
+        categories.map((item) => {
+            // console.log(`${item} is working!`)
+            console.log(`/${item}`)
+        })
+    }
+
+    const handleCategory = () => {
+        // console.log(categories.filter(item => item.category === ))
+    }
+
+
     return (
         <div className="home-wrapper">
             <div className="categories">
@@ -38,8 +50,8 @@ function Homepage() {
                 {/* First, use the categories GET and map each item */}
                 {
                     categories.map((item) => {
-                        console.log(item)
-                        return <button key={item}>{item}</button>
+                        // console.log(item)
+                        return <button onClick={handleCategory} key={item}>{item}</button>
                     }
                     )
                 }
