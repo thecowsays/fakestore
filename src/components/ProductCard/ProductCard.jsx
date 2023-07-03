@@ -5,15 +5,15 @@ import { AiFillHeart } from "react-icons/ai";
 function ProductCard({ product }) {
   return (
     <div className="card-container">
-      <div className="card">
-      <img src={product.image} />
+      <div className="card-item">
+        <div className="card-image"><img src={product.image} /></div>
       <AiFillHeart className="heart" />
-      <div>
+        <div className="card-info">
         <p className="bold">{product.title}</p>
         <p className="label">{product.category}</p>
         <br />
-        <p className="bold">{product.price}&euro;</p>
-      </div>
+          <p className="bold">{product.price}&euro;</p>
+        </div>
       </div>
     </div>
   )

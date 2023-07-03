@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import './Homepage.css'
+import '../../components/ProductCard/ProductCard.css'
 
 function Homepage() {
 
