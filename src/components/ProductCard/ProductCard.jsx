@@ -6,7 +6,7 @@ function ProductCard({ product }) {
   return (
     <div className="card-container">
       <div className="card-item">
-        <div className="card-image"><img src={product.image} /></div>
+        <img src={product.image} />
       <AiFillHeart className="heart" />
         <div className="card-info">
         <p className="bold">{product.title}</p>

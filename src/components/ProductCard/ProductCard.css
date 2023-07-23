@@ -12,16 +12,21 @@
     background-color: #fff;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    width: 15em;
     padding: 1em;
+    border-radius: .5em;
 }
 
 .card-info {
     text-align: left;
 }
 
-.card-item div img {
+.card-item img {
     width: 100%;
+    border: 2px solid rgba(0, 0, 0, .05);
+    border-radius: 1em;
+    padding: 2em;
+    opacity: 100%;
 }
 
 .heart {
@@ -32,8 +37,8 @@
     border-radius: 50%;
     position: absolute;
  /* for mobile portrait */
-    right: .5em;
-    top: 7em;
+    right: 10.5em;
+    top: 6.65em;
 }
 
 .label {
