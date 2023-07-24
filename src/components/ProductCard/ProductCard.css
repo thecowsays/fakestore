@@ -8,6 +8,7 @@
     padding: 1em;
     /* margin-bottom: 2em; */
     border-radius: .5em;
+    position: relative;
 }
 
 .card-info {
