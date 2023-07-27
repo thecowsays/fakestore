@@ -6,8 +6,9 @@ import '../../components/ProductCard/ProductCard.css'
 import { Link } from 'react-router-dom'
 
 function Homepage() {
-
+    // create state to show all products from a category
     const [categories, setCategories] = useState([])
+
     // create state to hold the products
     const [products, setProducts] = useState([])
 
@@ -41,7 +42,8 @@ function Homepage() {
 
     const handleCategory = () => {
         // button is clicked, what does it need to do?
-        // <Link to=`https://fakestoreapi.com/products/category/${}`></Link>
+        //  show products by category
+
     }
 
     const handleClick = (e) => {
