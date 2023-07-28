@@ -14,7 +14,7 @@ function Homepage() {
 
     useEffect(
         () => {
-            // make api call to get products
+            // make api call to get all products
             axios.get(`https://fakestoreapi.com/products`)
                 .then(res => {
                     // console.log(res.data)
@@ -27,52 +27,52 @@ function Homepage() {
             // make api call to get categories
             axios.get(`https://fakestoreapi.com/products/categories`)
                 .then(res => {
+                    // store it in state
                     setCategories(res.data)
+                    // console.log(categories)
                 })
                 .catch(err => console.log(err))
         }, []
     )
 
-    const showCategory = () => {
-        categories.map((item) => {
-            // console.log(`${item} is working!`)
-            console.log(`/${item}`)
-        })
+    const handleShowAll = () => {
+        // I need to show all products -- where do I need to get the data from?
+        // make api call to get all products
+        axios.get(`https://fakestoreapi.com/products`)
+            .then(res => {
+                // console.log(res.data)
+                // I have the data -- what do I do with it?
+                // store it in state
+                setProducts(res.data)
+            })
+            .catch(err => console.log(err))
     }
 
-    const handleCategory = () => {
-        // button is clicked, what does it need to do?
-        //  show products by category
-
-    }
-
-    const handleClick = (e) => {
-        console.log(e.target.key)
-        // console.log(categories.map((i) => `categories.[${i}]`))
-        // if (e.target.value == categories) {
-        //     console.log(`It worked!`)
-        // }
-        // else {
-        //     console.log(`Fail`)
-        // }
-    }
-
-    const showAll = () => {
-        axios.get(``)
-            .then()
+    const handleCategory = (category) => {
+        console.log(category)
+        // category end point -- what do we need to do with it?
+        // https://fakestoreapi.com/products/category/jewelery
+        axios.get(`https://fakestoreapi.com/products/category/${category}`)
+            .then(res => {
+                console.log(res.data)
+                // What should I do next? -- store in state 'products'
+                setProducts(res.data)
+            })
             .catch(err => console.log(err))
     }
 
     return (
         <div className="home-wrapper">
             <div className="categories">
-                <button>All</button>
+                <button onClick={handleShowAll}>All</button>
                 {/* I want to create a button for each category item */}
                 {/* First, use the categories GET and map each item */}
                 {
                     categories.map((item) => {
                         // console.log(item)
-                        return <button onClick={handleClick} key={item} value={item}>{item}</button>
+                        return <button onClick={
+                            () => handleCategory(item)
+                        } key={item} value={item}>{item}</button>
                     }
                     )
                 }
