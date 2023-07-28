@@ -25,7 +25,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     margin: 2em;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 2em;
-    position: relative;
 }
