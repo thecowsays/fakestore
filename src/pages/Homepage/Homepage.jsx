@@ -3,7 +3,6 @@ import axios from 'axios';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import './Homepage.css'
 import '../../components/ProductCard/ProductCard.css'
-import { Link } from 'react-router-dom'
 
 function Homepage() {
     // create state to show all products from a category
