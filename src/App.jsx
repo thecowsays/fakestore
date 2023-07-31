@@ -7,7 +7,6 @@ import Footer from './components/Footer/Footer.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 
 import './App.css'
-import './global.css'
 
 function App() {
     return (

@@ -1,6 +1,7 @@
 import React from 'react'
+
+import '../../App.css'
 import './Contact.css'
-// import '../../global.css'
 
 function Contact() {
   return (

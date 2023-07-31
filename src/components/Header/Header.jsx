@@ -1,7 +1,8 @@
 import React from 'react'
 import { SlBasket } from 'react-icons/sl'
+
+import '../../App.css'
 import './Header.css'
-import '../../global.css'
 
 function Header() {
     return (
