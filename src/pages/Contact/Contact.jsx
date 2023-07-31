@@ -5,9 +5,9 @@ import './Contact.css'
 function Contact() {
   return (
 
-    <div>
+    <div className="contact-wrapper">
       <h1>Contact Us</h1>
-      <div className='form-wrapper'>
+      <div className="form-wrapper">
       <form>
         <input type="text" placeholder="First Name"></input>
         <input type="text" placeholder="Last Name"></input>
