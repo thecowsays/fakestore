@@ -1,6 +1,7 @@
 import React from 'react'
-import './ProductCard.css'
 import { AiFillHeart } from "react-icons/ai";
+
+import './ProductCard.css'
 
 function ProductCard({ product }) {
   return (

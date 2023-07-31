@@ -8,7 +8,9 @@ import './Header.css'
 function Header() {
     return (
         <header>
-            <div className="logo"><Link to="/">Fakestore</ Link></div>
+            <div className="logo">
+                <Link to="/">Fakestore</ Link>
+            </div>
             <div>
                 <SlBasket size={35} fill={"var(--primary-color)"} /> {/* cart icon */}
                 {/* Shows red badge on cart */}

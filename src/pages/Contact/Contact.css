@@ -64,7 +64,7 @@ textarea {
     resize: none; /* removes corner icon */
 }
 
-button {
+.contact-wrapper button {
     background-color: var(--secondary-color);
     color: #fff;
     margin: 1em 0;
