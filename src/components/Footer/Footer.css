@@ -19,7 +19,8 @@ footer {
 
 footer a,
 footer a:hover,
-footer a:active {
+footer a:active,
+footer a:visited {
     color: #fff;
     font-size: 1rem;
 }
