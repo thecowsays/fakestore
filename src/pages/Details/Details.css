@@ -1,0 +1,43 @@
+.details-wrapper {
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+    padding: 1em;
+}
+
+@media all and (min-width: 360px) and (orientation: landscape) {
+
+    .details-wrapper {
+        flex-direction: row;
+    }
+}
+
+img {
+    width: 40vw; /* 20% margins */
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+p {
+    margin: .25em 0;
+    text-align: left;
+}
+
+.product-info button {
+    background-color: #FFD814;
+    color: #000;
+    font-weight: 700;
+    margin: 1em;
+    padding: .5em;
+    width: 11ch;
+    align-self: center;
+}
+
