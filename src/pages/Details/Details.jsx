@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
@@ -16,9 +16,9 @@ function Details() {
   // What do I do first?
   // Get the data, make an API call
   const [product, setProduct] = useState('')
+
   // useParams to grab id from URL in order to place API call
   const { productId } = useParams()
-
 
   useEffect(
     () => {

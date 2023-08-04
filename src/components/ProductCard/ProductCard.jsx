@@ -1,11 +1,11 @@
 import React from 'react'
 import { AiFillHeart } from "react-icons/ai"
 import { Link } from 'react-router-dom'
-import Details from '../../pages/Details/Details'
 
 import './ProductCard.css'
 
 function ProductCard({ product }) {
+
   return (
     <div className="card-item">
       <img src={product.image} />
