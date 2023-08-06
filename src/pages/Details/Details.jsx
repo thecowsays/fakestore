@@ -26,7 +26,7 @@ function Details() {
 
         .then(res => {
           setProduct(res?.data)
-          console.log(product)
+          // console.log(product)
         })
         .catch(err => console.log(err))
     }, []

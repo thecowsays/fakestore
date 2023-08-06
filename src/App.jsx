@@ -15,10 +15,10 @@ function App() {
             <Header />
             <Routes>
                 <Route exact path="/" element={<Homepage />} />
-                <Route exact path="/Homepage" element={<Homepage />} />
-                <Route exact path="/Contact" element={<Contact />} />
+                <Route exact path="/homepage" element={<Homepage />} />
+                <Route exact path="/contact" element={<Contact />} />
                 {/* useParams, passes productId to Details.jsx */}
-                <Route exact path="/Details/:productId" element={<Details />} />
+                <Route exact path="/details/:productId" element={<Details />} />
                 {/* <Route exact path="/" element={< />} /> */}
                 {/* <Route exact path="/" element={< />} /> */}
             </Routes>
