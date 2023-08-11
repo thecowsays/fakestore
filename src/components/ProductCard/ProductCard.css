@@ -44,6 +44,18 @@
     bottom: .7em;
 }
 
+.heart-selected {
+    fill: var(--text-dark);
+    background-color: none;
+    font-size: 1.5em;
+    padding: .2em;
+    border-radius: 50%;
+    position: absolute;
+ /* for mobile portrait */
+    right: .7em;
+    bottom: .7em;
+}
+
 .product-label {
     text-transform: capitalize;
     color: #808080;
