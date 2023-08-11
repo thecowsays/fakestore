@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage/Homepage.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import Contact from './pages/Contact/Contact.jsx'
 import Details from './pages/Details/Details.jsx'
+import Cart from './pages/Cart/Cart';
 
 import './App.css'
 
@@ -19,7 +20,7 @@ function App() {
                 <Route exact path="/contact" element={<Contact />} />
                 {/* useParams, passes productId to Details.jsx */}
                 <Route exact path="/details/:productId" element={<Details />} />
-                {/* <Route exact path="/" element={< />} /> */}
+                <Route exact path="/cart" element={<Cart />} />
                 {/* <Route exact path="/" element={< />} /> */}
             </Routes>
             <Footer />
