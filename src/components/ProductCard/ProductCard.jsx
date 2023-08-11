@@ -8,11 +8,19 @@ import './ProductCard.css'
 
 function ProductCard({ product }) {
 
+  // obj: click the empty icon and have it change to full
+  // initialize as false aka empty icon by default
+  const isInCart = false;
+
   return (
     <div className="card-item">
       <img src={product.image} />
-      <AiFillHeart className="heart heart-empty" />
-      {/* <AiOutlineHeart className="heart heart-empty" /> */}
+      {
+        isInCart ?
+          <AiFillHeart className="heart heart-full" />
+          :
+          <AiOutlineHeart className="heart heart-empty" /> // do falsey first
+      }
 
       {/* I want the card text to show the product details page when clicked */}
       {/* I need to create a "Link" and wrap all the text info */}
