@@ -33,27 +33,23 @@
 }
 
 .heart {
-    fill: var(--text-light);
-    background-color: #E7E7E7;
     font-size: 1.5em;
     padding: .2em;
     border-radius: 50%;
     position: absolute;
- /* for mobile portrait */
+    /* for mobile portrait */
     right: .7em;
     bottom: .7em;
 }
 
-.heart-selected {
-    fill: var(--text-dark);
+.heart-empty {
+    fill: var(--text-light);
+    background-color: #E7E7E7;
+}
+
+.heart-full {
+    fill: #f00;
     background-color: none;
-    font-size: 1.5em;
-    padding: .2em;
-    border-radius: 50%;
-    position: absolute;
- /* for mobile portrait */
-    right: .7em;
-    bottom: .7em;
 }
 
 .product-label {

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { AiFillHeart } from "react-icons/ai"
+import { AiOutlineHeart } from "react-icons/ai"
 
 import './ProductCard.css'
 
@@ -10,7 +11,8 @@ function ProductCard({ product }) {
   return (
     <div className="card-item">
       <img src={product.image} />
-      <AiFillHeart className="heart" />
+      <AiFillHeart className="heart heart-empty" />
+      {/* <AiOutlineHeart className="heart heart-empty" /> */}
 
       {/* I want the card text to show the product details page when clicked */}
       {/* I need to create a "Link" and wrap all the text info */}
