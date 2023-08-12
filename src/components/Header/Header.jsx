@@ -12,10 +12,12 @@ function Header() {
                 <Link to="/">Fakestore</ Link>
             </div>
             <div>
-                <SlBasket size={35} fill={"var(--primary-color)"} /> {/* cart icon */}
-                {/* Shows red badge on cart */}
-                {/* WIP - create prop for cart count */}
-                <div className="notification-badge">0</div>
+                <Link to="/cart">
+                    <SlBasket size={35} fill={"var(--primary-color)"} /> {/* cart icon */}
+                    {/* Shows red badge on cart */}
+                    {/* WIP - create prop for cart count */}
+                    <div className="notification-badge">0</div>
+                </Link>
             </div>
         </header>
     )
