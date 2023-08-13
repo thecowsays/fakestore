@@ -1,12 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "../../contexts/CartContext";
 
-import { AiFillHeart } from "react-icons/ai"
-import { AiOutlineHeart } from "react-icons/ai"
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 
-import './ProductCard.css'
+import "./ProductCard.css";
 
 function ProductCard({ product }) {
+  const { cartContents, addToCart } = useContext(CartContext);
 
   // obj: click the empty icon and have it change to full
   // initialize as false aka empty icon by default
@@ -16,10 +17,14 @@ function ProductCard({ product }) {
     <div className="card-item">
       <img src={product.image} />
       {
-        isInCart ?
+        isInCart ? (
           <AiFillHeart className="heart heart-full" />
-          :
-          <AiOutlineHeart className="heart heart-empty" /> // do falsey first
+        ) : (
+          <AiOutlineHeart
+            className="heart heart-empty"
+            onClick={() => addToCart(product)}
+          />
+        ) // do falsey first
       }
 
       {/* I want the card text to show the product details page when clicked */}
@@ -34,7 +39,7 @@ function ProductCard({ product }) {
         <p className="bold price-margin">{product.price}&euro;</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProductCard
+export default ProductCard;
