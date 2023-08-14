@@ -9,23 +9,22 @@ export default function CartContextProvider(props) {
 
   // Local storage code
 
-  // useEffect(
-  //     () => {
-  //         // check when page loads
-  //         const storedDarkMode = localStorage.getItem('darkMode')
-  //         // if there was a stored value
-  //         if (storedDarkMode) {
-  //             setDarkMode(JSON.parse(storedDarkMode))
-  //         }
-  //     }, []
-  // )
+  useEffect(() => {
+    // check when page loads
+    const savedCart = localStorage.getItem("cartContents");
+    // if there was a stored value
+    if (savedCart) {
+      setCartContents(JSON.parse(savedCart));
+    }
+  }, []);
 
-  // useEffect(
-  //     () => {
-  //         // Save current state to localStorage
-  //         localStorage.setItem('darkMode', JSON.stringify(darkMode))
-  //     }, [darkMode] // runs when darkMode is changed
-  // )
+  useEffect(
+    () => {
+      // Save current state to localStorage
+      localStorage.setItem("cartContents", JSON.stringify(cartContents));
+    },
+    [cartContents] // runs when darkMode is changed
+  );
 
   const addToCart = (itemToAdd) => {
     // console.log(`adding ${itemToAdd}`);
@@ -35,8 +34,15 @@ export default function CartContextProvider(props) {
     setCartContents(newCartContents);
   };
 
+  const removeFromCart = (itemId) => {
+    console.log(`removing ${itemId}`);
+    // remove from cart
+    let newCartContents = cartContents.filter((item) => item.id != itemId);
+    setCartContents(newCartContents);
+  };
+
   return (
-    <CartContext.Provider value={{ cartContents, addToCart }}>
+    <CartContext.Provider value={{ cartContents, addToCart, removeFromCart }}>
       {props.children}
     </CartContext.Provider>
   );

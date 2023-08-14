@@ -27,5 +27,3 @@ function Cart() {
 }
 
 export default Cart;
-
-// lesson 6 stopped at 47min

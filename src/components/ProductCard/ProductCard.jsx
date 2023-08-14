@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../contexts/CartContext";
 
@@ -7,18 +7,29 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import "./ProductCard.css";
 
 function ProductCard({ product }) {
-  const { cartContents, addToCart } = useContext(CartContext);
+  const { cartContents, addToCart, removeFromCart } = useContext(CartContext);
 
   // obj: click the empty icon and have it change to full
   // initialize as false aka empty icon by default
-  const isInCart = false;
+  // const isInCart = false;
+  const [inCart, setInCart] = useState(false);
+
+  //need to check if item in cart anytime cart changes
+  useEffect(() => {
+    // console.log("cart changed");
+    // is this item in cart?
+    setInCart(cartContents.find((item) => item.id == product.id));
+  }, [cartContents]);
 
   return (
     <div className="card-item">
       <img src={product.image} />
       {
-        isInCart ? (
-          <AiFillHeart className="heart heart-full" />
+        inCart ? (
+          <AiFillHeart
+            className="heart heart-full"
+            onClick={() => removeFromCart(product?.id)}
+          />
         ) : (
           <AiOutlineHeart
             className="heart heart-empty"
